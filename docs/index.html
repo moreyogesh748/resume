@@ -3,52 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Digital Resume</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Yogesh More - Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #2c3e50, #4ca1af);
+            color: white;
+        }
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+        }
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #fff;
+        }
+        .header h1 {
+            font-size: 36px;
+            margin: 0;
+            font-weight: 600;
+        }
+        .header p {
+            font-size: 18px;
+            font-weight: 400;
+            opacity: 0.8;
+        }
+        .section {
+            margin-top: 30px;
+        }
+        h2 {
+            color: #f1c40f;
+            border-bottom: 2px solid #f1c40f;
+            padding-bottom: 5px;
+        }
+        p, li {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill {
+            background: #f1c40f;
+            color: black;
+            padding: 8px 15px;
+            border-radius: 8px;
+            font-weight: 600;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            opacity: 0.8;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Yogesh More</h1>
-        <p>Site Reliability Engineer | Hadoop & Cloud Admin </p>
-        <p>Email: ha.yogeshmore@example.com | Phone: (123) 456-7890</p>
-    </header>
-
-    <section class="about">
-        <h2>About Me</h2>
-        <p>Experienced Site Reliability Engineer (SRE) and Hadoop Administrator with a strong background in managing large-scale data platforms and distributed computing environments. Proficient in the Hadoop ecosystem, Kubernetes, and cloud service. Demonstrated ability to optimize system performance, implement automation, and collaborate across global teams to ensure system reliability and efficiency.
-.</p>
-    </section>
-
-    <section class="experience">
-        <h2>Professional Experience</h2>
-        <article>
-            <h3>Site Reliability Engineer — HCL Tech</h3>
-            <p class="dates">August 2022 - Present</p>
+    <div class="container">
+        <div class="header">
+            <h1>Yogesh More</h1>
+            <p>Site Reliability Engineer | Hadoop & Cloud Admin</p>
+            <p>📞 +91 8605 709623 | ✉️ ha.yogeshmore@gmail.com</p>
+        </div>
+        
+        <div class="section">
+            <h2>Professional Summary</h2>
+            <p>Experienced Site Reliability Engineer (SRE) and Hadoop Administrator with expertise in managing large-scale data platforms, optimizing system performance, and implementing automation. Skilled in Hadoop, Kubernetes, and cloud technologies.</p>
+        </div>
+        
+        <div class="section">
+            <h2>Professional Experience</h2>
+            <h3>HCL Technologies – Site Reliability Engineer (2022 – Present)</h3>
             <ul>
-                <li>Lead the development of a scalable web application used by millions of users.</li>
-                <li>Implemented new features and optimized existing code to improve application performance.</li>
-                <li>Worked closely with the design team to refine user interface and user experience elements.</li>
+                <li>Managing Apple’s CDP cluster and data pipelines for applications like Apple Music, App Store, Siri.</li>
+                <li>Handling data ingestion via Kafka, APIs, and HTTP into HDFS, processed with Spark.</li>
+                <li>Managing disaster recovery, retention jobs, and Kubernetes infrastructure.</li>
+                <li>Implemented Python automation to enhance operational efficiency.</li>
             </ul>
-        </article>
-        <article>
-            <h3>Hadoop Admin — Wmolex Pvt Ltd.</h3>
-            <p class="dates">Dec 2016 - August 2022</p>
+            <h3>Wmolex Pvt Ltd – Hadoop Administrator (2016 – 2022)</h3>
             <ul>
-                <li>Developed multiple high-traffic e-commerce websites using modern JavaScript frameworks.</li>
-                <li>Collaborated on the creation of RESTful APIs for mobile application integrations.</li>
-                <li>Conducted code reviews and mentored junior developers.</li>
+                <li>Managed Cloudera Hadoop clusters for retail analytics, optimizing Spark performance.</li>
+                <li>Implemented system security measures, monitored HDFS utilization.</li>
             </ul>
-        </article>
-    </section>
-
-    <section class="education">
-        <h2>Education</h2>
-        <p>Bachelor of Engineering</p>
-        <p class="dates">North Maharashtra University — 2011-2015</p>
-    </section>
-
-    <footer>
-        <p>Find me on <a href="https://www.linkedin.com">LinkedIn</a> | <a href="https://github.com">GitHub</a></p>
-    </footer>
+        </div>
+        
+        <div class="section">
+            <h2>Technical Skills</h2>
+            <div class="skills">
+                <span class="skill">Hadoop</span>
+                <span class="skill">Spark</span>
+                <span class="skill">Kafka</span>
+                <span class="skill">Kubernetes</span>
+                <span class="skill">Python</span>
+                <span class="skill">AWS</span>
+                <span class="skill">Airflow</span>
+                <span class="skill">Linux</span>
+                <span class="skill">Grafana</span>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Retail Data Platform:</strong> Led the administration of a Hadoop-based platform for retail analytics.</li>
+                <li><strong>Kubernetes Monitoring:</strong> Integrated Grafana & Telemetry Hubble for real-time monitoring.</li>
+                <li><strong>Automation of Data Pipelines:</strong> Developed Python scripts for automation, reducing manual intervention.</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>Education</h2>
+            <p><strong>Bachelor of Engineering, 2015</strong></p>
+        </div>
+        
+        <div class="footer">
+            <p>Designed with 💡 and passion | © 2025 Yogesh More</p>
+        </div>
+    </div>
 </body>
 </html>
